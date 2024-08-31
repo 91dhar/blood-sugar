@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Level Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Sugar Level Tracker</h1>
+
+    <form id="sugarForm">
+        <div class="input-row">
+            <input type="date" id="date" required>
+            <input type="number" id="fasting" placeholder="Fasting" required>
+            <input type="number" id="pp" placeholder="PP" required>
+        </div>
+        <button type="submit">Add Entry</button>
+    </form>
+
+    <table id="sugarTable">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Fasting</th>
+                <th>PP</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <button id="viewHistory" onclick="location.href='counts.html'">View History</button>
+
+    <script src="script.js"></script>
+    <div class="footer">
+        Created by rawcodr
+        <a href="https://github.com/91dhar" target="_blank" rel="noopener noreferrer">
+            <img src="https://github.com/favicon.ico" alt="GitHub">
+        </a>
+        <a href="https://x.com/rawcodr_" target="_blank" rel="noopener noreferrer">
+            <img src="https://abs.twimg.com/favicons/twitter.ico" alt="Twitter">
+        </a>
+    </div>
+</body>
+
+</html>
